@@ -1,5 +1,5 @@
 # Webtools
-This is a tool to convert web to ip and ip to web recode and update by @comradehacker 
+This is a tool to convert web to ip and ip to web with auto filter dead ip or domain.. recode and update by @comradehacker 
 To use one of the tools, you need either a domain / url or an IP list.
   
   If you have a domain / url list with the format :
@@ -20,22 +20,33 @@ To use one of the tools, you need either a domain / url or an IP list.
   <h3>Linux</h3>
   
   ```
-  $ git clone https://github.com/rebl0x3r/iptools.git
+  $ git clone https://github.com/cmdhck/Webtools
   
-  $ cd domain2ip
+  $ cd Webtools
 
   $ chmod +x domain-ip.py
   $ chmod +x ip-domain.py
-  ```
-  To remove http and https via bash through ```sed```:
-  ```
-  $ sed -i 's/https\?:\/\///g' file.txt 
-  $ python3 domain-ip.py
-  $ python3 ip-domain.py
-  ```
   Or just run :
-  ```
   $ python3 formatter.py
-   
+  $ python3 ip-domain.py
+  $ python3 domain-ip.py
+   ```
+  For Termux and kali users
   
+  <h3>Termux</h3>
   
+```
+
+git clone https://github.com/cmdhck/Webtools
+
+cd Webtools
+```
+For converting bulk or single ips to domain kindly run
+
+```python ip-domain.py```
+
+For converting bulk or single domain to ips kindly run
+```python domain-ip.py```
+
+For removing or http or https from single or bulk domain kindly run
+```python formatter.py```
